@@ -1,1 +1,1 @@
-console.log("service worker registered successfully");
+console.log('service worker registered successfully');
