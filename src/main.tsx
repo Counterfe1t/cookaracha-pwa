@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from 'react-router';
 import Home from './pages/Home.tsx';
 import Products from './pages/Products.tsx';
 import ShoppingLists from './pages/ShoppingLists.tsx';
+import NotFound from './pages/NotFound.tsx';
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
@@ -15,6 +16,7 @@ createRoot(document.getElementById('root')!).render(
                     <Route index element={<Home />} />
                     <Route path="/shopping-lists" element={<ShoppingLists />} />
                     <Route path="/products" element={<Products />} />
+                    <Route path="*" element={<NotFound />} />
                 </Route>
             </Routes>
         </BrowserRouter>
