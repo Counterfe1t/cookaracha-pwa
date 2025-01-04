@@ -1,9 +1,11 @@
-const App = () => {
-    return (
-        <main className="p-10 h-screen">
-            <h1 className="font-bold text-3xl text-center">Cookaracha 🪳</h1>
-        </main>
-    );
-};
+import { Outlet } from 'react-router';
+import Navbar from './components/nav/Navbar';
 
-export default App;
+export default function App() {
+    return (
+        <>
+            <Navbar />
+            <Outlet />
+        </>
+    );
+}
