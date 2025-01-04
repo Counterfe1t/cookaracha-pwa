@@ -5,6 +5,7 @@ import App from './App.tsx';
 import { BrowserRouter, Route, Routes } from 'react-router';
 import Home from './pages/Home.tsx';
 import Products from './pages/Products.tsx';
+import ShoppingLists from './pages/ShoppingLists.tsx';
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
@@ -12,6 +13,7 @@ createRoot(document.getElementById('root')!).render(
             <Routes>
                 <Route path="/" element={<App />}>
                     <Route index element={<Home />} />
+                    <Route path="/shopping-lists" element={<ShoppingLists />} />
                     <Route path="/products" element={<Products />} />
                 </Route>
             </Routes>
