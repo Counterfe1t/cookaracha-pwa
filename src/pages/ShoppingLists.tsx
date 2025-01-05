@@ -13,11 +13,11 @@ export default function ShoppingLists() {
     } = useItems();
 
     return (
-        <main className="p-10 h-screen space-y-5">
-            <h1 className="text-center font-bold text-3xl">
+        <main className="h-screen space-y-5 p-10">
+            <h1 className="text-center text-3xl font-bold">
                 Try out the new shopping list!
             </h1>
-            <div className="max-w-lg mx-auto bg-slate-100 rounded-md p-5 space-y-5">
+            <div className="mx-auto max-w-lg space-y-5 rounded-md bg-slate-100 p-5">
                 <AddItemForm onSubmit={onAddItem} />
                 <ItemList
                     items={items}

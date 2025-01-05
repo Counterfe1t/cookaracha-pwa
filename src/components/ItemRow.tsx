@@ -9,7 +9,7 @@ interface ItemRowProps {
 export default function ItemRow({ item, onChange, onDelete }: ItemRowProps) {
     return (
         <div className="flex items-center gap-1">
-            <label className="flex items-center grow gap-2 border rounded-md p-2 border-gray-400 bg-white hover:bg-slate-50">
+            <label className="flex grow items-center gap-2 rounded-md border border-gray-400 bg-white p-2 hover:bg-slate-50">
                 <input
                     type="checkbox"
                     className="scale-125"
@@ -18,7 +18,7 @@ export default function ItemRow({ item, onChange, onDelete }: ItemRowProps) {
                 />
                 <span
                     className={
-                        item.isChecked ? 'line-through text-gray-400' : ''
+                        item.isChecked ? 'text-gray-400 line-through' : ''
                     }
                 >
                     {item.name}

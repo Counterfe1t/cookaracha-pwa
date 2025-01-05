@@ -22,7 +22,7 @@ export default function AddItemForm({ onSubmit }: AddItemFormProps) {
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
                 placeholder="Add a new item..."
-                className="rounded-s-md grow border border-gray-400 p-2"
+                className="grow rounded-s-md border border-gray-400 p-2"
             />
             <button
                 type="submit"

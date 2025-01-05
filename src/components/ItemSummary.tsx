@@ -12,14 +12,14 @@ export default function ItemSummary({
     const checkedItems = items.filter((item) => item.isChecked);
 
     return (
-        <div className="text-center space-y-2">
+        <div className="space-y-2 text-center">
             <p>
                 {checkedItems.length}/{items.length} items checked.
             </p>
             {checkedItems.length > 0 && (
                 <button
                     onClick={onDeleteAllCheckedItems}
-                    className="text-red-500 hover:underline text-sm font-medium"
+                    className="text-sm font-medium text-red-500 hover:underline"
                 >
                     Delete all checked
                 </button>
