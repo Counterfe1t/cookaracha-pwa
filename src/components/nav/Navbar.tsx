@@ -8,6 +8,7 @@ export default function Navbar() {
                 <div className="flex space-x-4 items-center">
                     <Link to="/">Home</Link>
                     <Link to="/shopping-lists">Shopping lists</Link>
+                    <Link to="/recipes">Recipes</Link>
                     <Link to="/products">Products</Link>
                 </div>
             </div>

@@ -6,6 +6,7 @@ import './index.css';
 import Home from './pages/Home.tsx';
 import NotFound from './pages/NotFound.tsx';
 import Products from './pages/Products.tsx';
+import Recipes from './pages/Recipes.tsx';
 import ShoppingLists from './pages/ShoppingLists.tsx';
 
 createRoot(document.getElementById('root')!).render(
@@ -15,6 +16,7 @@ createRoot(document.getElementById('root')!).render(
                 <Route path="/" element={<App />}>
                     <Route index element={<Home />} />
                     <Route path="/shopping-lists" element={<ShoppingLists />} />
+                    <Route path="/recipes" element={<Recipes />} />
                     <Route path="/products" element={<Products />} />
                     <Route path="*" element={<NotFound />} />
                 </Route>
