@@ -11,12 +11,13 @@ export default function NavMenuItem({ path, title }: NavMenuItemProps) {
         <NavLink
             className={({ isActive }) =>
                 cn(
-                    'inline-flex items-center bg-white px-1 hover:border-gray-300',
+                    'inline-flex items-center bg-white px-1',
                     {
                         'border-b-2 border-black hover:border-black': isActive,
                     },
                     {
-                        'border-b-2 border-white': !isActive,
+                        'border-b-2 border-transparent hover:border-gray-300':
+                            !isActive,
                     }
                 )
             }
